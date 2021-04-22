@@ -21,10 +21,20 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from demo01!');
+		vscode.window.showWarningMessage('Hello World from demo01!Let me code');
+		// vscode.window.showInformationMessage('Hello World from demo01!Let me code');
+	});
+	// get local time
+	let gettime = vscode.commands.registerCommand('demo01.getTime', function () {
+		// The code you place here will be executed every time your command is executed
+		let time = new Date();
+		let localtime = time.getFullYear() + 'year/'+ (time.getMonth() + 1)+'mouth/' + time.getDate() + 'day' + time.getHours() + ':'+ time.getMinutes() + ':' +time.getSeconds();
+		// Display a message box to the user
+		vscode.window.showWarningMessage('Today is ' + localtime);
+		// vscode.window.showInformationMessage('Today is ' + localtime);
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(disposable, gettime);
 }
 
 // this method is called when your extension is deactivated

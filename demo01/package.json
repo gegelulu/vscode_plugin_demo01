@@ -17,7 +17,13 @@
 		"commands": [
 			{
 				"command": "demo01.helloWorld",
-				"title": "Hello World"
+				"title": "Hello code",
+				"category": "Hello"
+			},
+			{
+				"command": "demo01.getTime",
+				"title": "get time",
+				"category": "get"
 			}
 		]
 	},
