@@ -63,3 +63,14 @@ Added features X, Y, and Z.
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+
+### note
+- creat repository 
+- pull local by sourcetree
+- vscode-plugin-demo
+   - npm install -g yo generator -code
+   - yo code 
+   - add .gitignore
+      - ignorant node_modules .vscode package.json 
+   - code ./XXXX(project name) 
+      - F5 open edit window ;shift + ctrl + P  enter : Hello world; alert window, beginning... :)
